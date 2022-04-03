@@ -60,6 +60,20 @@ a:hover {
   background: #4673f8;
 }
 
+.btn-more,
+.btn-more:focus {
+  background: #0e8bc5;
+  padding: 8px 25px;
+  border-radius: 5px;
+  color: #fff;
+  border: #fff 1px solid;
+}
+.btn-more:hover,
+.btn-more:focus:hover {
+  color: #fff;
+  background: rgba(14, 139, 197, 0.87);
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -175,9 +189,9 @@ a:hover {
   background: #3364fa;
 }
 .navbar .dropdown ul {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 30px;
+  right: nj, m;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -190,7 +204,7 @@ a:hover {
   border-radius: 4px;
 }
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 300px;
 }
 .navbar .dropdown ul a {
   padding: 10px 20px;
@@ -474,6 +488,18 @@ section {
   color: #1d2d61;
 }
 
+.section-title-left {
+  text-align: left;
+  padding-bottom: 15px;
+}
+.section-title-left h2 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  color: #000000;
+}
 /*--------------------------------------------------------------
 # BENEFITS General
 --------------------------------------------------------------*/
@@ -1231,6 +1257,173 @@ Application -Form
   .clients img {
     width: 30%;
   }
+}
+
+/*--------------------------------------------------------------
+# Blog page > Hero Section
+--------------------------------------------------------------*/
+.blog-hero {
+  width: 100%;
+  margin-top: 50px;
+  padding: 100px 0px;
+  background: url(/assets/img/blog-background.png), #4c9712;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# Blog page > search Section
+--------------------------------------------------------------*/
+
+.page-search .input-group {
+  width: 100%;
+}
+
+.page-search .search {
+  position: relative;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.page-search .search i {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+
+.page-search .search input {
+  height: 60px;
+  text-indent: 25px;
+  border: none;
+  background-color: #c4c4c4;
+  border-radius: 50px;
+}
+
+.page-search .search input:focus {
+  box-shadow: none;
+  border: 1px solid #4c9712;
+}
+
+.page-search .search button {
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: #4c9712;
+}
+
+/*--------------------------------------------------------------
+# Blog page > blog list Section
+--------------------------------------------------------------*/
+.blog {
+  margin-top: 35px;
+}
+.blog-list img {
+  border-radius: 15px;
+}
+.blog-list .blog-content {
+  gap: 10px;
+}
+.blog-list h3 a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.blog-list p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+/*--------------------------------------------------------------
+#Careers-description > page content
+--------------------------------------------------------------*/
+
+.blog-detail {
+  margin-top: 60px;
+  background-color: #4c9712;
+  height: 50px;
+}
+.blog-list-hero img {
+  border-radius: 18px;
+}
+.security-detail {
+  margin-top: 60px;
+  background-color: #1a1e28;
+  height: 50px;
+}
+
+.contact-details {
+  margin-top: 60px;
+  background-color: #771dae;
+  height: 50px;
+}
+
+.community-single {
+  margin-top: 60px;
+  background-color: #0e8bc5;
+  height: 50px;
+}
+
+/*--------------------------------------------------------------
+#related-card > related-card
+--------------------------------------------------------------*/
+
+.related-card {
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.related-card .section-title-left {
+  margin-bottom: 30px;
+}
+
+.related-card .card {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.related-card .card img {
+  margin-bottom: 20px;
+}
+.related-card .card .card-title {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.related-card .card .card-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5c5c5c;
+}
+
+.related-card .card .card-icon {
+  display: flex;
+  justify-content: end;
+}
+.related-card .card .card-icon i {
+  color: #000;
+  font-size: 18px;
+  padding-right: 12px;
+}
+
+.related-card .card .card-icon i:hover {
+  color: #000;
+  font-size: 18px;
+  padding-right: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -2052,4 +2245,167 @@ Application -Form
   margin-top: 25px;
   border-top: rgba(255, 255, 255, 0.5) solid 1px;
   padding: 20px 0px;
+}
+
+/*--------------------------------------------------------------
+# community page > Hero Section
+--------------------------------------------------------------*/
+.commiunity-hero {
+  width: 100%;
+  margin-top: 50px;
+  padding: 100px 0px;
+  background: url(/assets/img/community-bg.png), #002e7a;
+  background-size: cover;
+}
+
+.commiunity-hero .testimonials-slider h3 {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+}
+
+.commiunity-hero .testimonials-slider p {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 145%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.commiunity-hero .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.commiunity-hero .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid #fff;
+}
+.commiunity-hero .swiper-pagination .swiper-pagination-bullet-active {
+  border-radius: 12px;
+  width: 24px;
+  height: 12px;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .commiunity-hero .testimonial-wrap {
+    padding-left: 0;
+  }
+  .commiunity-hero .testimonials-carousel,
+  .commiunity-hero .testimonials-slider {
+    overflow: hidden;
+  }
+  .commiunity-hero .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+  .commiunity-hero .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# community page > search Section
+--------------------------------------------------------------*/
+
+.commiunity-page-search .input-group {
+  width: 100%;
+}
+
+.commiunity-page-search .search {
+  position: relative;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.commiunity-page-search .search i {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+
+.commiunity-page-search .search input {
+  height: 60px;
+  text-indent: 25px;
+  border: none;
+  background-color: #c4c4c4;
+  border-radius: 50px;
+}
+
+.commiunity-page-search .search input:focus {
+  box-shadow: none;
+  border: 1px solid #002e7a;
+}
+
+.commiunity-page-search .search button {
+  position: absolute;
+  border-radius: 50px;
+  border: none;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: #002e7a;
+}
+
+/*--------------------------------------------------------------
+# community page > card Section
+--------------------------------------------------------------*/
+
+.commiunity-list .single-category {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.commiunity-list .single-category:last-child {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+.commiunity-list .card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.commiunity-list .card {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.commiunity-list .card-img-top {
+  border-radius: 15px 15px 0px 0px;
+}
+.commiunity-list .card .card-title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #293041;
+}
+
+.commiunity-list .card .card-text {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.commiunity-list .feature-start {
+  padding: 4px 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ffb802;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 999;
 }
