@@ -17,7 +17,7 @@
                 <ul>
                   <li>
                     <div class="icon-text">
-                      <a href="/"><i class="bi bi-arrow-left"></i></a>
+                      <a href="/community"><i class="bi bi-arrow-left"></i></a>
                       <p>{{.Title}}</p>
                     </div>
                     <a href="/contact-us" class="btn-career">Try It</a>
@@ -70,7 +70,7 @@
             <a href="/community" class="btn-more">More Templates</a>
           </div>
           <div class="row">
-            {{ range .Pages }}
+            {{ range where site.RegularPages "Section" "blog" }}
             <div class="col-md-3">
               <div class="card">
                 <div class="card-body">
