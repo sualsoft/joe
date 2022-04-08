@@ -18,11 +18,9 @@
                   <li>
                     <div class="icon-text">
                       <a href="/"><i class="bi bi-arrow-left"></i></a>
-                      <p>Air Transportation</p>
+                      <p>{{.Title}}</p>
                     </div>
-                    <a href="/careers-details.html" class="btn-career"
-                      >Try It</a
-                    >
+                    <a href="/contact-us" class="btn-career">Try It</a>
                   </li>
                 </ul>
               </div>
@@ -37,13 +35,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
+              {{with .Params.feature_image}}
               <img
-                src="/assets/img/blog/blog-hero-1.jpg"
+                src="{{.}}"
                 alt=""
                 class="img-fluid"
                 data-aos="fade-up"
                 data-aos-delay="200"
               />
+              {{end}}
             </div>
           </div>
         </div>
@@ -58,56 +58,7 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                temporibus vitae corrupti blanditiis eveniet, quam fugit in!
-                Vitae aliquam, quasi quaerat fugiat dicta error sapiente tempora
-                voluptates quis aperiam voluptatibus eveniet possimus, minima
-                fuga voluptatum impedit sunt alias ratione illum, laborum
-                veritatis inventore cupiditate qui! Asperiores ipsam rem
-                cupiditate repellat corporis dignissimos voluptatum accusantium,
-                in maxime, quaerat quibusdam facilis voluptas itaque, veritatis
-                expedita id! Dolores, libero molestias! Veritatis sint officia
-                dolore quasi quibusdam. Id voluptatem dolores corrupti facere
-                dolorem iste et perferendis obcaecati aut deleniti natus eaque
-                deserunt pariatur repudiandae, inventore eius? Omnis incidunt,
-                accusantium dolores dolorem earum sapiente velit.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias similique voluptatibus minima fugit, eius alias
-                doloremque necessitatibus itaque dolore explicabo sequi unde rem
-                quae adipisci cumque assumenda velit enim nihil odit culpa rerum
-                provident? Alias id aliquam eveniet hic voluptas voluptatum
-                dolorem sint, quam magnam a eum iste possimus necessitatibus
-                nisi eligendi atque doloremque tempora culpa minus dolor eaque.
-                Numquam maiores commodi exercitationem omnis enim ratione atque
-                nulla iste provident voluptas delectus ipsa animi quasi culpa
-                sapiente, vel asperiores labore rerum ducimus voluptate quo,
-                ipsum reprehenderit! Velit libero possimus minus quaerat aperiam
-                mollitia, quis facere aut ut. In eum id debitis nemo explicabo
-                molestias sapiente. Commodi reprehenderit porro, quidem quis
-                exercitationem sunt incidunt autem dolorem et similique laborum
-                soluta omnis doloribus quaerat architecto aliquam iusto quod
-                laboriosam amet earum veritatis cum esse facilis? Magni ex
-                quisquam vel architecto! Obcaecati, quisquam ut ex, accusamus
-                debitis similique eos molestias architecto dolorum quasi harum.
-                Harum commodi eaque qui rerum, eligendi officiis incidunt sit
-                maxime consectetur impedit, ex nam non cupiditate quaerat?
-                Corrupti minus doloremque dolores hic fuga! Odit, sit culpa
-                impedit consequatur vel accusamus nihil iste itaque veritatis
-                necessitatibus quibusdam eveniet magni aliquid distinctio
-                voluptates odio eaque quod voluptatibus suscipit ad autem.
-                Necessitatibus, sit iure! Dolor corrupti harum, cupiditate sit
-                fugit, reprehenderit distinctio tempora numquam possimus
-                accusamus ex earum cum natus laudantium quia. Incidunt officiis
-                non doloribus quia mollitia hic rem odio error fugiat laborum
-                architecto possimus dolore voluptatem, porro accusantium dolores
-                sit exercitationem fugit numquam distinctio voluptates ad
-                tempore. Labore, sequi consequuntur.
-              </p>
-            </div>
+            <div class="col-md-12">{{.Content}}</div>
           </div>
         </div>
       </section>
@@ -117,85 +68,28 @@
       <section class="related-card">
         <div class="container">
           <div class="section-title-left" data-aos="fade-up">
-            <a href="/" class="btn-more">More Templates</a>
+            <a href="/community" class="btn-more">More Templates</a>
           </div>
           <div class="row">
+            {{ $related := (where site.RegularPages "Section" "community") |
+            intersect (where site.Pages ".Title" "!=" .Title) | union
+            (site.RegularPages.Related . ) }} {{ range first 4 $related }}
             <div class="col-md-3">
               <div class="card">
                 <div class="card-body">
-                  <img
-                    src="/assets/img/community/community-icon.png"
-                    class="img-fluid"
-                    alt="community"
-                  />
-                  <h5 class="card-title">Aircrafts</h5>
-                  <p class="card-text">
-                    This is a high-level template used to store the matters for
-                    the brand protection hub
-                  </p>
+                  {{with .Params.icon}}
+                  <img src="{{.}}" class="img-fluid" alt="community" />{{end}}
+                  <h5 class="card-title">{{.Title}}</h5>
+                  <p class="card-text">{{.Description}}</p>
                   <div class="card-icon">
-                    <a href="/"><i class="bi bi-arrow-right-circle"></i></a>
+                    <a href="{{.Permalink}}"
+                      ><i class="bi bi-arrow-right-circle"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-body">
-                  <img
-                    src="/assets/img/community/community-icon.png"
-                    class="img-fluid"
-                    alt="community"
-                  />
-                  <h5 class="card-title">Aircrafts</h5>
-                  <p class="card-text">
-                    This is a high-level template used to store the matters for
-                    the brand protection hub
-                  </p>
-                  <div class="card-icon">
-                    <a href="/"><i class="bi bi-arrow-right-circle"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-body">
-                  <img
-                    src="/assets/img/community/community-icon.png"
-                    class="img-fluid"
-                    alt="community"
-                  />
-                  <h5 class="card-title">Aircrafts</h5>
-                  <p class="card-text">
-                    This is a high-level template used to store the matters for
-                    the brand protection hub
-                  </p>
-                  <div class="card-icon">
-                    <a href="/"><i class="bi bi-arrow-right-circle"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-body">
-                  <img
-                    src="/assets/img/community/community-icon.png"
-                    class="img-fluid"
-                    alt="community"
-                  />
-                  <h5 class="card-title">Aircrafts</h5>
-                  <p class="card-text">
-                    This is a high-level template used to store the matters for
-                    the brand protection hub
-                  </p>
-                  <div class="card-icon">
-                    <a href="/"><i class="bi bi-arrow-right-circle"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {{end}}
           </div>
         </div>
       </section>
@@ -212,82 +106,26 @@
               <h2 class="text-left text-light">Relevant Templates</h2>
             </div>
             <div class="row">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />{{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                    <h5 class="card-title">{{.Title}}</h5>
+                    <a href="{{.Permalink}}" class="card-text stretched-link"
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 layout: community-single-1
 title: Investigation
 list_image: /assets/img/community/community-1.jpg
+feature_image: /assets/img/blog/blog-hero-1.jpg
 description: Community offers a variety of domains design to meet your
   high-end requirements.
 feature: true

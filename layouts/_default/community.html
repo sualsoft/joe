@@ -160,6 +160,10 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.Pages "Section"
+              "ip-and-brand-protection") | intersect (where site.Pages ".Title"
+              "!=" .Title) | union (site.RegularPages.Related . ) }} {{ range
+              first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
@@ -179,6 +183,7 @@
                 </div>
                 <!-- end card -->
               </div>
+              {{end}}
             </div>
           </div>
 

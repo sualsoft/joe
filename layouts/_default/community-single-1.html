@@ -70,22 +70,20 @@
             <a href="/community" class="btn-more">More Templates</a>
           </div>
           <div class="row">
-            {{ range where site.RegularPages "Section" "blog" }}
+            {{ $related := (where site.RegularPages "Section" "community") |
+            intersect (where site.Pages ".Title" "!=" .Title) | union
+            (site.RegularPages.Related . ) }} {{ range first 4 $related }}
             <div class="col-md-3">
               <div class="card">
                 <div class="card-body">
-                  <img
-                    src="/assets/img/community/community-icon.png"
-                    class="img-fluid"
-                    alt="community"
-                  />
-                  <h5 class="card-title">Aircrafts</h5>
-                  <p class="card-text">
-                    This is a high-level template used to store the matters for
-                    the brand protection hub
-                  </p>
+                  {{with .Params.icon}}
+                  <img src="{{.}}" class="img-fluid" alt="community" />{{end}}
+                  <h5 class="card-title">{{.Title}}</h5>
+                  <p class="card-text">{{.Description}}</p>
                   <div class="card-icon">
-                    <a href="/"><i class="bi bi-arrow-right-circle"></i></a>
+                    <a href="{{.Permalink}}"
+                      ><i class="bi bi-arrow-right-circle"></i
+                    ></a>
                   </div>
                 </div>
               </div>
