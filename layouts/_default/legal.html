@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" . }}
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Job title Section ======= -->
+      <section class="d-flex align-items-center about-content security-detail">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="job-title">
+                <ul>
+                  <li>
+                    <div class="icon-text">
+                      <a href="/"><i class="bi bi-arrow-left"></i></a>
+                      <p>{{ .Title}}</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Job-title Section -->
+
+      <!-- ======= Content Section ======= -->
+      <section
+        class="d-flex align-items-center content-section"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">{{ .Content}}</div>
+          </div>
+        </div>
+      </section>
+      <!-- End content Section -->
+    </main>
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" . }}
+    <!-- End Footer -->
+
+    {{ partial "script.html" . }}
+  </body>
+</html>

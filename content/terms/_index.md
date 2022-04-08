@@ -1,6 +1,6 @@
 ---
 layout: legal
-title: Security
+title: Terms & Conditions
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste temporibus vitae corrupti blanditiis eveniet, quam fugit in! Vitae aliquam, quasi quaerat fugiat dicta error sapiente tempora voluptates quis aperiam voluptatibus eveniet possimus, minima fuga voluptatum impedit sunt alias ratione illum, laborum veritatis inventore cupiditate qui! Asperiores ipsam rem cupiditate repellat corporis dignissimos voluptatum accusantium, in maxime, quaerat quibusdam facilis voluptas itaque, veritatis expedita id! Dolores, libero molestias! Veritatis sint officia dolore quasi quibusdam. Id voluptatem dolores corrupti facere dolorem iste et perferendis obcaecati aut deleniti natus eaque deserunt pariatur repudiandae, inventore eius? Omnis incidunt, accusantium dolores dolorem earum sapiente velit.
