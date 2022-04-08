@@ -1,5 +1,5 @@
 ---
-community-single-1
+layout: community-single-1
 title: Cases
 list_image: /assets/img/community/community-1.jpg
 description: Community offers a variety of domains design to meet your
