@@ -160,24 +160,21 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
-              {{ $related := (where site.Pages "Section"
-              "ip-and-brand-protection") | intersect (where site.Pages ".Title"
-              "!=" .Title) | union (site.RegularPages.Related . ) }} {{ range
-              first 4 $related }}
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
@@ -200,82 +197,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -292,82 +234,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -384,82 +271,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -476,82 +308,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -568,82 +345,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -660,82 +382,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -752,82 +419,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -844,82 +456,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -936,82 +493,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -1028,82 +530,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
 
@@ -1120,82 +567,27 @@
               </p>
             </div>
             <div class="row" data-aos="fade-up">
+              {{ $related := (where site.RegularPages "Section" "community") |
+              intersect (where site.Pages ".Title" "!=" .Title) | union
+              (site.RegularPages.Related . ) }} {{ range first 4 $related }}
               <div class="col-md-3">
                 <!-- Start card -->
                 <div class="card">
+                  {{if .Params.feature}}
                   <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
+                  {{end}} {{with .Params.list_image}}
+                  <img src="{{.}}" class="card-img-top" alt="title" />
+                  {{end}}
                   <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
+                    <h5 class="card-title">{{.Title}}</h5>
                     <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
+                      >{{.Description}}
                     </a>
                   </div>
                 </div>
                 <!-- end card -->
               </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
-              <div class="col-md-3">
-                <!-- Start card -->
-                <div class="card">
-                  <i class="bi bi-star-fill feature-start"></i>
-                  <img
-                    src="/assets/img/community/community-1.jpg"
-                    class="card-img-top"
-                    alt="title"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Air Transportation</h5>
-                    <a href="/" class="card-text stretched-link"
-                      >Community offers a variety of domains design to meet your
-                      high-end requirements.
-                    </a>
-                  </div>
-                </div>
-                <!-- end card -->
-              </div>
+              {{end}}
             </div>
           </div>
         </div>
