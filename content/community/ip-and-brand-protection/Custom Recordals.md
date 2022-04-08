@@ -1,5 +1,5 @@
 ---
-layout: community
+layout: community-single-1
 title: Custom Recordals
 list_image: /assets/img/community/community-1.jpg
 description: Community offers a variety of domains design to meet your
