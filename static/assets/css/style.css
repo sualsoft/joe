@@ -34,6 +34,21 @@ a:hover {
   background: rgba(86, 188, 117, 0.7);
 }
 
+.btn-career,
+.btn-career:focus {
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #c50e7c;
+  border: 1px solid #ffffff;
+}
+.btn-career:hover,
+.btn-career:focus:hover {
+  color: #fff;
+  background: rgba(197, 14, 124, 0.8);
+}
+
 .btn-dark,
 .btn-dark:focus {
   background: #002e7a;
@@ -1340,9 +1355,20 @@ Application -Form
 /*--------------------------------------------------------------
 # Blog page > search Section
 --------------------------------------------------------------*/
+.page-search {
+  padding-bottom: 0px;
+}
 
 .page-search .input-group {
   width: 100%;
+}
+.page-search ul {
+  list-style: none !important;
+  border-radius: 15px;
+}
+.page-search ul li {
+  border-bottom: #e5e5e5 1px solid;
+  padding: 20px 40px;
 }
 
 .page-search .search {
@@ -2439,6 +2465,7 @@ Application -Form
   width: 100%;
   margin-bottom: 20px;
   border: none;
+  border: #ededed solid 1px;
 }
 
 .commiunity-list .card {
@@ -2467,7 +2494,7 @@ Application -Form
 }
 
 .commiunity-list .feature-start {
-  padding: 4px 8px;
+  padding: 8px 8px;
   background-color: #fff;
   border-radius: 50%;
   color: #ffb802;
