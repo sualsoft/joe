@@ -1362,11 +1362,13 @@ Application -Form
 .page-search .input-group {
   width: 100%;
 }
-.page-search ul {
+.page-search ul,
+.commiunity-page-search ul {
   list-style: none !important;
   border-radius: 15px;
 }
-.page-search ul li {
+.page-search ul li,
+.commiunity-page-search ul li {
   border-bottom: #e5e5e5 1px solid;
   padding: 20px 40px;
 }
