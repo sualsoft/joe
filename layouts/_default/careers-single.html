@@ -1,98 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <title>HubStream Website</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon" />
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="/assets/css/style.css" rel="stylesheet" />
-  </head>
-
+  {{ partial "head.html" . }}
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="/"
-            ><img src="/assets/img/logo.png" alt="" class="img-fluid"
-          /></a>
-        </div>
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto" href="/about-us">About Us</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Community</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="/careers">Careers</a></li>
-            <li class="d-sm-block d-md-none">
-              <a class="getstarted scrollto" href="#about">Request demo</a>
-              <a class="nav-link scrollto" href="#">Login</a>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <nav class="navbar d-none d-md-block">
-          <ul>
-            <li>
-              <a class="getstarted scrollto" href="#about">Request demo</a>
-            </li>
-            <li><a class="nav-link scrollto" href="/about-us">Login</a></li>
-          </ul>
-        </nav>
-        <!-- .navbar -->
-      </div>
-    </header>
+    {{ partial "header.html" . }}
     <!-- End Header -->
 
     <main id="main">
@@ -109,15 +20,11 @@
                 <ul>
                   <li>
                     <div class="icon-text">
-                      <a href="/careers.html"
-                        ><i class="bi bi-arrow-left"></i
-                      ></a>
-                      <p>Front-end Developer (Job description)</p>
+                      <a href="/careers"><i class="bi bi-arrow-left"></i></a>
+                      <p>{{.Title}}</p>
                     </div>
 
-                    <a href="/careers-details.html" class="btn-light"
-                      >Apply Now</a
-                    >
+                    <a href="/careers-apply" class="btn-light">Apply Now</a>
                   </li>
                 </ul>
               </div>
@@ -135,219 +42,17 @@
       >
         <div class="container">
           <div class="row">
-            <div class="col-md-9">
-              <h4>At a high level, you would</h4>
-              <ul>
-                <li>
-                  Managing obligations to suppliers, customers and third-party
-                  vendors
-                </li>
-                <li>Processing bank deposits</li>
-                <li>Reconciling financial statements</li>
-              </ul>
-
-              <h4>Job brief</h4>
-              <p>
-                We are looking for an Accounts Administrator to manage our
-                company’s accounts payable and receivable.
-              </p>
-
-              <p>
-                Accounts Administrator responsibilities include reviewing and
-                reconciling accounts, processing payments to external partners
-                and maintaining updated records of invoices and receipts. To be
-                successful in this role, you should have a Finance or Accounting
-                background and be familiar with bookkeeping.
-              </p>
-
-              <p>
-                Ultimately, you will ensure we process all financial
-                transactions accurately and on time.
-              </p>
-              <h4>Responsibilities</h4>
-              <p>
-                Manage obligations to suppliers, customers and third-party
-                vendors <br />
-                Process bank deposits<br />
-                Reconcile financial statements<br />
-                Prepare, send and store invoices<br />
-                Contact clients and send reminders to ensure timely payments<br />
-                Submit tax forms<br />
-                Identify and address discrepancies<br />
-                Report on the status of accounts payable and receivable<br />
-                Update internal accounting databases and spreadsheets<br />
-                Requirements and skills<br />
-                Proven work experience as an Accounts Administrator or similar
-                role<br />
-                Good knowledge of bookkeeping procedures and debt collection
-                regulations<br />
-                Hands-on experience with accounting software<br />
-                Advanced knowledge of Excel (using financial formulas and
-                creating spreadsheets)<br />
-                Solid data entry skills with an ability to identify numerical
-                errors<br />
-                Good organizational and time-management abilities<br />
-                BSc degree in Finance, Accounting or relevant field<br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End content Section -->
-
-      <!-- ======= Content Section ======= -->
-      <section
-        class="d-flex align-items-center content-section"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4>About Hubstream</h4>
-              <div class="row">
-                <div class="col-md-4">
-                  <img
-                    src="/assets/img/about-img.png"
-                    alt=""
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="col-md-8">
-                  <p>
-                    Power your barcode to combat counterfeiters, detect
-                    diversion, meet regulations and gain supply chain insight.
-                    Together, our solutions offer the strongest brand protection
-                    for your products. Among its main benefits, it allows
-                    companies to improve operational intelligence, ensure
-                    product safety, mitigate fraud, increase consumer trust and
-                    engagement, and reach sustainability goals.Power your
-                    barcode to combat counterfeiters, detect diversion, meet
-                    regulations and gain supply chain insight. Together, our
-                    solutions offer the strongest brand protection for your
-                    products. Among its main benefits, it allows companies to
-                    improve operational intelligence, ensure product safety,
-                    mitigate fraud, increase consumer trust and engagement, and
-                    reach sustainability goals.
-                  </p>
-                  <p>
-                    Power your barcode to combat counterfeiters, detect
-                    diversion, meet regulations and gain supply chain insight.
-                    Together, our solutions offer the strongest brand protection
-                    for your products. Among its main benefits, it allows
-                    companies to improve operational intelligence, ensure
-                    product safety, mitigate fraud, increase consumer trust and
-                    engagement, and reach sustainability goals.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="col-md-9">{{.Content}}</div>
           </div>
         </div>
       </section>
       <!-- End content Section -->
     </main>
     <!-- End #main -->
-
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-9 text-lg-left text-left">
-              <h4>Book a free Demo</h4>
-              <p>
-                Book a free, personalized onboarding call with one of our
-                experts.
-              </p>
-            </div>
-            <div class="col-lg-3 text-right">
-              <a class="btn-light" href="#about">Request demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row d-flex align-items-start">
-            <div class="col-lg-5 text-left">
-              <img src="/assets/img/logo-light.png" alt="" />
-              <p>
-                The Hubstream platform combines investigative case management,
-                link analysis and visualization, and hyper-customizable
-                workflows into one easy-to-use product.
-              </p>
-              <div class="social-icons">
-                <ul class="d-flex">
-                  <li>
-                    <a href="#" class="instagram"
-                      ><i class="bi bi-instagram"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="linkedin"
-                      ><i class="bi bi-linkedin"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="twitter"
-                      ><i class="bi bi-twitter"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg text-left footer-nav">
-              <ul>
-                <li>Company</li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Contact us</a></li>
-              </ul>
-            </div>
-            <div class="col-lg text-left footer-nav">
-              <ul>
-                <li>Resources</li>
-                <li><a href="">Blogs & Articles</a></li>
-                <li><a href="">Partner Login</a></li>
-              </ul>
-            </div>
-            <div class="col-lg text-left footer-nav">
-              <ul>
-                <li>Legal</li>
-                <li><a href="">Terms & Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Security</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row d-flex align-items-center">
-            <div class="col-lg-12 footer-credit">
-              <p>© 2020 Hubstream Inc . All rights reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    {{ partial "footer.html" . }}
     <!-- End Footer -->
 
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
-
-    <!-- Vendor JS Files -->
-    <script src="/assets/vendor/purecounter/purecounter.js"></script>
-    <script src="/assets/vendor/aos/aos.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/vendor/php-email-form/validate.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="/assets/js/main.js"></script>
+    {{ partial "script.html" . }}
   </body>
 </html>
