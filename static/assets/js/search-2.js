@@ -1,5 +1,5 @@
-let searchInput = document.querySelector("#searchInput"),
-  searchResult = document.querySelector("#searchResult");
+let searchInput = document.querySelector("#searchInputs"),
+  searchResult = document.querySelector("#searchResults");
 
 let dataJSON;
 
