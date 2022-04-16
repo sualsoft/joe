@@ -128,16 +128,38 @@
           <div
             class="row height d-flex justify-content-center align-items-center"
           >
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
-              <div class="search">
-                <i class="bi bi-search"></i>
+            <div class="col-md-9 text-center">
+              <div class="form">
                 <input
                   type="text"
-                  class="form-control"
-                  placeholder="Search templates here"
+                  class="form-control form-input"
+                  placeholder="Search any keyword here..."
+                  id="search"
                 />
-                <button class="btn btn-primary">Search</button>
+                <span class="left-pan"><i class="fa fa-search"></i></span>
               </div>
+              {{ $currentNode := . }} {{ $currentNode.Scratch.Set "pages"
+              .Site.Pages }} {{ $pages := ($currentNode.Scratch.Get "pages") }}
+              <script>
+                $(function() {
+                var projects = [
+                {{ range (where .Site.Pages "Section" "community") }}
+                  {
+                    value: "{{ .Title }}",
+                    url:"{{ .Permalink }}"
+                  },
+                  {{ end }}
+                ];
+                $( "#search" ).autocomplete({
+                  source: projects
+                })
+                .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+                  return $( "<li>" )
+                  .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.value + "</a>"  )
+                  .appendTo( ul );
+                };
+                });
+              </script>
             </div>
           </div>
         </div>
