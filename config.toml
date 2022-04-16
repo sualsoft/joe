@@ -4,3 +4,13 @@ title = 'My New Hugo Site'
 
 [outputs]
     home = ["HTML", "JSON"]
+
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 30
